@@ -81,15 +81,24 @@ footer {
 }
 
 .project-card {
-    flex: 1 1 30%; 
-    max-width: 30%; 
-    text-align: center; 
+    flex: 1 1 45%;
+    max-width: 45%;
+    min-height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .project-card img {
-    width: 95%;
-    height: auto;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
     border-radius: 5px; 
+    border: 1px solid #ddd; 
+    display: block;
 }
 
 .project-card a {
@@ -99,6 +108,17 @@ footer {
 
 .project-card a:hover {
     text-decoration: underline;
+}
+
+.project-card h3 {
+    min-height: 48px;  
+    line-height: 1.4;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    margin-bottom: 10px;
 }
 
 .skills-container {
